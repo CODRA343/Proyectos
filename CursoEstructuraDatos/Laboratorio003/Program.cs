@@ -1,14 +1,33 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-var i = 10;
+//Un programa que pida un número que indique que es par o impar
 
-var indice = 1;
+//Declarar variables
+Console.WriteLine("==== Programa que determina si es par o impar ====");
+Console.Write("INGRESE UN NUMERO ENTERO:");
+var numeroRecibido = Console.ReadLine ();  
+var numero = int.Parse (numeroRecibido);
+var esPar = false;
 
-do
+//Resolver
+if (numero%2 == 0)
 {
-    Console.WriteLine(indice);
-    indice++;
-} while (indice <= i);
+    esPar = true;
+}
+// Mostrar resultados
+Console.WriteLine(esPar ? "Es par" : "Es impar");
+Console.ReadLine ();   
+
+
+//var i = 10;
+//
+//var indice = 1;
+//
+//do
+//{
+//    Console.WriteLine(indice);
+//    indice++;
+//} while (indice <= i);
 
 //while (indice <= i)
 //{
