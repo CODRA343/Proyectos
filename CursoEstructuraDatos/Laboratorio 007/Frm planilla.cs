@@ -82,5 +82,35 @@ namespace Laboratorio_007
         {
             Application.Exit();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtResultado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSueldo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtHorasExtras_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

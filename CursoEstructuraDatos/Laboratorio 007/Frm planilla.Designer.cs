@@ -53,6 +53,7 @@
             txtSueldo.Name = "txtSueldo";
             txtSueldo.Size = new Size(111, 23);
             txtSueldo.TabIndex = 4;
+            txtSueldo.TextChanged += txtSueldo_TextChanged;
             // 
             // label1
             // 
@@ -79,6 +80,7 @@
             label2.Size = new Size(46, 15);
             label2.TabIndex = 5;
             label2.Text = "Código";
+            label2.Click += label2_Click;
             // 
             // txtHorasExtras
             // 
@@ -86,6 +88,7 @@
             txtHorasExtras.Name = "txtHorasExtras";
             txtHorasExtras.Size = new Size(164, 23);
             txtHorasExtras.TabIndex = 8;
+            txtHorasExtras.TextChanged += txtHorasExtras_TextChanged;
             // 
             // label3
             // 
@@ -102,6 +105,7 @@
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(306, 23);
             txtNombre.TabIndex = 10;
+            txtNombre.TextChanged += txtNombre_TextChanged;
             // 
             // label4
             // 
@@ -137,7 +141,7 @@
             // 
             cboArea.DropDownStyle = ComboBoxStyle.DropDownList;
             cboArea.FormattingEnabled = true;
-            cboArea.Items.AddRange(new object[] { "Contabilidad", "Adminictración" });
+            cboArea.Items.AddRange(new object[] { "Contabilidad", "Administración" });
             cboArea.Location = new Point(640, 91);
             cboArea.Name = "cboArea";
             cboArea.Size = new Size(121, 23);
@@ -161,6 +165,7 @@
             txtResultado.ReadOnly = true;
             txtResultado.Size = new Size(749, 212);
             txtResultado.TabIndex = 15;
+            txtResultado.TextChanged += txtResultado_TextChanged;
             // 
             // btnCrear
             // 
@@ -184,7 +189,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(547, 384);
+            btnLimpiar.Location = new Point(542, 384);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(96, 23);
             btnLimpiar.TabIndex = 18;
@@ -226,6 +231,7 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Planilla";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
